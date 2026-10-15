@@ -1074,12 +1074,129 @@ main {
   }
 }
 footer {
-    padding: 40px 20px;
+  padding: 40px 20px;
 
-    text-align: center;
+  text-align: center;
 
-    color: #666;
+  color: #666;
 
-    font-family: "Press Start 2P", monospace;
-    font-size: 7px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+}
+/* ==================================================
+   LANGUAGE STATS
+================================================== */
+
+.language-section {
+  position: relative;
+  margin-top: 70px;
+  padding: 45px;
+
+  background: #202020;
+
+  border: 4px solid #000;
+
+  box-shadow:
+    inset 4px 4px rgba(255, 255, 255, 0.08),
+    inset -4px -4px rgba(0, 0, 0, 0.5);
+}
+
+.language-label {
+  color: #55ffff;
+}
+
+.language-heading {
+  margin-bottom: 28px;
+}
+
+.language-heading .eyebrow {
+  color: #55ffff;
+  margin-bottom: 12px;
+}
+
+.language-heading h2 {
+  font-family: "Press Start 2P", monospace;
+  font-size: 20px;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.language-card {
+  padding: 20px;
+
+  background: #2d2d2d;
+
+  border-top: 4px solid #484848;
+  border-left: 4px solid #484848;
+  border-right: 4px solid #111;
+  border-bottom: 4px solid #111;
+}
+
+.language-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-bottom: 17px;
+}
+
+.flag {
+  font-size: 30px;
+}
+
+.language-info h3 {
+  color: #ffd83d;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+
+  margin-bottom: 7px;
+}
+
+.language-info p {
+  color: #aaa;
+  font-size: 17px;
+}
+
+/* XP BAR */
+
+.language-bar {
+  height: 13px;
+
+  padding: 2px;
+
+  background: #090909;
+
+  border: 2px solid #000;
+}
+
+.language-progress {
+  height: 100%;
+  background: #55ff55;
+}
+
+.language-progress.native {
+  width: 100%;
+}
+
+.language-progress.english {
+  width: 80%;
+}
+
+.language-progress.german {
+  width: 35%;
+}
+
+@media (max-width: 800px) {
+  .language-section {
+    padding: 40px 22px;
+  }
+
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
 }
